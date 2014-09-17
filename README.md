@@ -20,7 +20,8 @@ This template is built with these libraries and technologies:
 Attribution
 -----------
 
-The awesome dinosaur icon is hand-crafted by [Nadirah Sakri](http://thestarofpisces.deviantart.com). Go and check out her *awesome* arts!
+* The awesome dinosaur icon is hand-crafted by [Nadirah Sakri](http://thestarofpisces.deviantart.com). Go and check out her *awesome* arts!
+* Stock photos are taken from [Unsplash](http://unsplash.com)
 
 Usage Instructions
 ------------------

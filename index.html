@@ -16,11 +16,36 @@
 
       <script src="libs/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   </head>
-  <body>
+  <body  data-spy="scroll" data-target=".mono-nav">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <!--
+      Navbar
+    -->
+    <nav class="navbar navbar-default navbar-fixed-top mono-nav" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mono_nav_collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://bitbucket.org/rossmy/monosaurus/overview" target="_blank">Monosaurus <span class="badge">1.0.0</span></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="mono_nav_collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#top_section" data-toggle="scrollto">Top</a></li>
+            <li><a href="#partner_section" data-toggle="scrollto">Partner Logos</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 
     <!--
       To make life simpler, and not spiralling into divception, use <section> tags
@@ -28,10 +53,30 @@
 
       Use the class .full to make this section fill up the entire available space.
     -->
-    <section class="full" id="top_section">
-      <h1 class="">Monosaurus</h1>
+    <section class="full mono-bg-unsplash1" id="top_section">
+
+      <!--
+        The class .mono-big-title will middle-align the title on the section.
+        See monosaurus.css/.less for details and more classes
+      -->
+      <h1 class="text-center mono-big-title mono-white mono-eg-title">
+        Monosaurus
+        <small>One-page Bootstrap-based HTML5 theme for<br>microsite, events, conference and more.</small>
+      </h1>
+
+      <!--
+        This will draw the 'skip to content' icon, placed at the bottom of the section
+        use .mono-skip-center to put it in the middle, or -left / -right to put it there.
+
+        The text is just a placeholder, it will be hidden and an icon will be placed
+      -->
+      <a class="mono-skip-content mono-skip-center" title="Skip To Content" href="#content" data-toggle="skipcontent"><span class="fa fa-angle-down"></span></a>
     </section>
     <!-- End one full-bleed section -->
+
+    <section class="full" id="partner_section">
+      Section Two
+    </section>
 
     <!-- Put scripts at the bottom, to speed up page initial load -->
     <script src="libs/jquery-2.1.1.min.js"></script>

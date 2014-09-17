@@ -12,3 +12,143 @@
  * @link       https://bitbucket.org/rossmy/monosaurus/overview
  * @since      1.0.0
  */
+
+/*
+    Mixins
+*/
+.translateY(@value: 0px) {
+    -webkit-transform: translateY(@value);
+    -moz-transform: translateY(@value);
+    -ms-transform: translateY(@value);
+    transform: translateY(@value);
+}
+
+.translateX(@value: 0px) {
+    -webkit-transform: translateX(@value);
+    -moz-transform: translateX(@value);
+    -ms-transform: translateX(@value);
+    transform: translateX(@value);
+}
+
+.animate(@mode: all, @speed: 0.1s) {
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-backface-visibility: hidden;
+    -moz-perspective: 1000;
+
+    -webkit-transition: @mode @speed ease-in-out;
+    -moz-transition: @mode @speed ease-in-out;
+    transition: @mode @speed ease-in-out;
+}
+
+body {
+    padding: 0;
+    position: relative; /* for scrollspy to work */
+}
+
+/*
+    Header styles
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    &.mono-big-title {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        right: 0;
+        top: 50%;
+
+        .translateY(-50%);
+
+        font-size: 56px;
+
+        small {
+            display: block;
+            font-size: 26px;
+            margin-top: 10px;
+        }
+    }
+
+    &.mono-white {
+        color: #fff;
+
+        small {
+            color: #fff;
+        }
+    }
+}
+
+section {
+    position: relative;
+    background: #444;
+    padding: 70px 0;
+}
+
+/*
+    Skip to content classes
+*/
+.mono-skip-content {
+    position: absolute;
+    bottom: 30px;
+
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #fff;
+    border-radius: 120px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 54px;
+
+    outline: 0 none;
+
+    .animate();
+
+    &.mono-skip-center {
+        left: 50%;
+        margin-left: -30px;
+    }
+    &.mono-skip-left {
+        left: 30px;
+    }
+    &.mono-skip-right {
+        right: 30px;
+    }
+
+    &:active,
+    &:focus,
+    &:visited {
+        color: #fff;
+        outline: 0 none;
+    }
+
+    &:hover {
+        .translateY(-4px);
+        background: #fff;
+        color: #333;
+    }
+}
+
+/*
+    Non-essential sections
+    Most of the classes here are used as an example in the preview theme
+*/
+.mono-eg-title {
+    text-shadow: 0 2px 5px rgba(0,0,0,0.8);
+
+    small {
+        line-height: 1.2;
+    }
+}
+.mono-bg-unsplash1 {
+    background: #888 url('../img/stock/unsplash1.jpg') no-repeat 50% 50%;
+    background-size: cover; /* cover is the magic word that makes your background fit */
+}

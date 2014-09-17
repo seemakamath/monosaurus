@@ -1,0 +1,141 @@
+/**
+ * monosaurus.less
+ *
+ * Main stylesheet for Monosaurus Theme
+ * Requires Twitter Bootstrap 3.2.0
+ *
+ * @package    Monosaurus
+ * @author     Firdouss Ross <hello@ross.my>
+ * @copyright  2014 Ross.my
+ * @license    http://www.opensource.org/licenses/mit-license.html MIT License
+ * @version    1.0.0
+ * @link       https://bitbucket.org/rossmy/monosaurus/overview
+ * @since      1.0.0
+ */
+/*
+    Mixins
+*/
+body {
+  padding: 0;
+  position: relative;
+  /* for scrollspy to work */
+
+}
+/*
+    Header styles
+*/
+h1.mono-big-title,
+h2.mono-big-title,
+h3.mono-big-title,
+h4.mono-big-title,
+h5.mono-big-title,
+h6.mono-big-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 56px;
+}
+h1.mono-big-title small,
+h2.mono-big-title small,
+h3.mono-big-title small,
+h4.mono-big-title small,
+h5.mono-big-title small,
+h6.mono-big-title small {
+  display: block;
+  font-size: 26px;
+  margin-top: 10px;
+}
+h1.mono-white,
+h2.mono-white,
+h3.mono-white,
+h4.mono-white,
+h5.mono-white,
+h6.mono-white {
+  color: #fff;
+}
+h1.mono-white small,
+h2.mono-white small,
+h3.mono-white small,
+h4.mono-white small,
+h5.mono-white small,
+h6.mono-white small {
+  color: #fff;
+}
+section {
+  position: relative;
+  background: #444;
+  padding: 70px 0;
+}
+/*
+    Skip to content classes
+*/
+.mono-skip-content {
+  position: absolute;
+  bottom: 30px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #fff;
+  border-radius: 120px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 54px;
+  outline: 0 none;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-backface-visibility: hidden;
+  -moz-perspective: 1000;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.mono-skip-content.mono-skip-center {
+  left: 50%;
+  margin-left: -30px;
+}
+.mono-skip-content.mono-skip-left {
+  left: 30px;
+}
+.mono-skip-content.mono-skip-right {
+  right: 30px;
+}
+.mono-skip-content:active,
+.mono-skip-content:focus,
+.mono-skip-content:visited {
+  color: #fff;
+  outline: 0 none;
+}
+.mono-skip-content:hover {
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
+  background: #fff;
+  color: #333;
+}
+/*
+    Non-essential sections
+    Most of the classes here are used as an example in the preview theme
+*/
+.mono-eg-title {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+.mono-eg-title small {
+  line-height: 1.2;
+}
+.mono-bg-unsplash1 {
+  background: #888888 url('../img/stock/unsplash1.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  /* cover is the magic word that makes your background fit */
+
+}
