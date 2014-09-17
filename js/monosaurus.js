@@ -57,6 +57,7 @@ function mono_UIresize () {
     */
     $('section.full').each(function () {
         $(this).height( $(window).height() - 140 );
+        console.log(this.id);
     });
 
     /*
@@ -65,6 +66,15 @@ function mono_UIresize () {
     $('section.minfull').each(function () {
         $(this).css('min-height', ($(window).height() - 140) + 'px' );
     });
+
+    /*
+        Size the quotes
+    */
+    var maxQuoteHeight = 0;
+    $('.mono-quote-container').find('.item').each(function () {
+        maxQuoteHeight = ($(this).height() > maxQuoteHeight) ? $(this).height() : maxQuoteHeight;
+    });
+    $('.mono-quote-container').find('.item').height(maxQuoteHeight);
 }
 
 /*
