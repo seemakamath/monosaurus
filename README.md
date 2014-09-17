@@ -17,6 +17,11 @@ This template is built with these libraries and technologies:
 * [jQuery](http://jquery.com/) (small amount) for some full-bleed magic
 * [IcoMoon](https://icomoon.io) for converting vectors to icons
 
+Attribution
+-----------
+
+The awesome dinosaur icon is hand-crafted by [Nadirah Sakri](http://thestarofpisces.deviantart.com). Go and check out her *awesome* arts!
+
 Usage Instructions
 ------------------
 
@@ -25,7 +30,7 @@ The source file (HTML, JS & CSS) are documented with comments. Read through thes
 Licence
 -------
 
-Monosaurus is released under the [MIT License](http://en.wikipedia.org/wiki/MIT_License). Feel free to fork and use this template as you see fit. Accreditation is not required, although it would be *freaking awesome* if you do!
+Monosaurus is released under the [MIT License](http://www.opensource.org/licenses/mit-license.html). Feel free to fork and use this template as you see fit. Accreditation is not required, although it would be *freaking awesome* if you do!
 
 About The Author
 ----------------
