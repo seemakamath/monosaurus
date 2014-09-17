@@ -25,4 +25,9 @@ The source file (HTML, JS & CSS) are documented with comments. Read through thes
 Licence
 -------
 
-Monosaurus is released under the [MIT License](http://en.wikipedia.org/wiki/MIT_License). Feel free to fork and use this template as you see fit. Accreditation is not required, although it would be freaking awesome if you do!
+Monosaurus is released under the [MIT License](http://en.wikipedia.org/wiki/MIT_License). Feel free to fork and use this template as you see fit. Accreditation is not required, although it would be *freaking awesome* if you do!
+
+About The Author
+----------------
+
+[Firdouss Ross](http://ross.my) is a front-end web developer, a husband and an avid motorsports fan. He loves coffee too.
