@@ -93,3 +93,14 @@ $(window).resize(function () {
       mono_UIresize();
     }, 500, "monoResizeSections");
 });
+
+$(window).scroll(function () {
+    var winHeight = $(this).height(),
+        winScroll = $(this).scrollTop();
+
+    if (winScroll >= winHeight) {
+        $('.navbar-mono').addClass('navbar-mono-condensed');
+    } else {
+        $('.navbar-mono').removeClass('navbar-mono-condensed');
+    }
+});

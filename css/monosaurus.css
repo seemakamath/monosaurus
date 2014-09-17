@@ -132,9 +132,16 @@ section {
 }
 .navbar-mono .navbar-brand {
   padding: 10px 20px;
-  margin: 20px 0;
+  margin: 20px 20px 15px 0;
   color: #555;
   font-size: 20px;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-backface-visibility: hidden;
+  -moz-perspective: 1000;
+  -webkit-transition: margin 0.1s ease-in-out;
+  -moz-transition: margin 0.1s ease-in-out;
+  transition: margin 0.1s ease-in-out;
 }
 .navbar-mono .navbar-toggle {
   border: 2px solid #333;
@@ -172,6 +179,13 @@ section {
 .navbar-mono .navbar-nav {
   font-size: 16px;
   padding: 20px 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-backface-visibility: hidden;
+  -moz-perspective: 1000;
+  -webkit-transition: padding 0.1s ease-in-out;
+  -moz-transition: padding 0.1s ease-in-out;
+  transition: padding 0.1s ease-in-out;
 }
 .navbar-mono .navbar-nav > li > a {
   color: #333;
@@ -202,6 +216,12 @@ section {
 }
 .navbar-mono .navbar-nav > li + li {
   margin-left: 20px;
+}
+.navbar-mono.navbar-mono-condensed .navbar-brand {
+  margin: 5px 20px 0 -15px;
+}
+.navbar-mono.navbar-mono-condensed .navbar-nav {
+  padding: 5px 0;
 }
 @media (max-width: 768px) {
   .navbar-mono .navbar-brand {
