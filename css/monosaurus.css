@@ -378,6 +378,7 @@ section {
   border-radius: 200px;
   width: 60px;
   height: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .mono-quote-container .carousel-control {
   background: #000;
@@ -410,6 +411,17 @@ section {
   }
   .mono-quote-container .carousel-indicators {
     display: none;
+  }
+}
+@media (max-width: 970px) {
+  .mono-quote-container {
+    width: 100%;
+  }
+  .mono-quote-container .carousel-inner .item {
+    padding: 0px 80px;
+  }
+  .mono-quote-container .carousel-inner .item blockquote {
+    margin: 0 0;
   }
 }
 /*
@@ -501,4 +513,9 @@ section {
   background-size: cover;
   /* cover is the magic word that makes your background fit */
 
+}
+.mono-dino {
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: -60px;
 }
