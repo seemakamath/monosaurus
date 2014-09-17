@@ -87,7 +87,7 @@ h6 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     h1,
     h2,
     h3,
@@ -247,7 +247,7 @@ section {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar-mono {
         .navbar-brand {
             padding: 15px;
@@ -423,7 +423,7 @@ section {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .mono-quote-container {
         width: 100%;
 
@@ -467,6 +467,8 @@ section {
     border: 1px solid rgba(255,255,255,0.1);
     padding: 20px;
     border-radius: 6px;
+    margin-bottom: 30px;
+    background: rgba(0,0,0,0.2);
 }
 
 /*
@@ -481,6 +483,10 @@ section {
         color: #fff;
     }
 
+    h4 {
+        margin: 0 0 10px 0;
+    }
+
     .mono-page-footer-bottom {
         margin-bottom: -30px;
         margin-top: 30px;
@@ -490,6 +496,22 @@ section {
 
         color: #999;
     }
+
+    .list-group {
+        background: rgba(0,0,0,0.2);
+
+        .list-group-item {
+            background: transparent;
+            border-color: rgba(255,255,255,0.1);
+        }
+    }
+}
+
+/*
+    Overrides
+*/
+.twitter-timeline {
+    width: 100% !important;
 }
 
 /*
