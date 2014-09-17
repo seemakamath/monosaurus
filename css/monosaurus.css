@@ -124,6 +124,117 @@ section {
   color: #333;
 }
 /*
+    Navigation bar
+*/
+.navbar-mono {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar-mono .navbar-brand {
+  padding: 10px 20px;
+  margin: 20px 0;
+  color: #555;
+  font-size: 20px;
+}
+.navbar-mono .navbar-toggle {
+  border: 2px solid #333;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-backface-visibility: hidden;
+  -moz-perspective: 1000;
+  -webkit-transition: border-color 0.1s ease-in-out;
+  -moz-transition: border-color 0.1s ease-in-out;
+  transition: border-color 0.1s ease-in-out;
+  padding: 8px 9px;
+}
+.navbar-mono .navbar-toggle .icon-bar {
+  background-color: #333;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-backface-visibility: hidden;
+  -moz-perspective: 1000;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  -moz-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+.navbar-mono .navbar-toggle.collapsed {
+  border-color: #999;
+}
+.navbar-mono .navbar-toggle.collapsed .icon-bar {
+  background-color: #999;
+}
+.navbar-mono .navbar-toggle:hover {
+  border-color: #333;
+}
+.navbar-mono .navbar-toggle:hover .icon-bar {
+  background-color: #333;
+}
+.navbar-mono .navbar-nav {
+  font-size: 16px;
+  padding: 20px 0;
+}
+.navbar-mono .navbar-nav > li > a {
+  color: #333;
+  outline: 0 none;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  border-radius: 6px;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-backface-visibility: hidden;
+  -moz-perspective: 1000;
+  -webkit-transition: border-color 0.1s ease-in-out;
+  -moz-transition: border-color 0.1s ease-in-out;
+  transition: border-color 0.1s ease-in-out;
+}
+.navbar-mono .navbar-nav > li > a:hover,
+.navbar-mono .navbar-nav > li > a:active,
+.navbar-mono .navbar-nav > li > a:focus {
+  outline: 0 none;
+  background: transparent;
+}
+.navbar-mono .navbar-nav > li > a:hover {
+  border-color: #999;
+}
+.navbar-mono .navbar-nav > li.active > a {
+  color: #000;
+  border-color: #555;
+}
+.navbar-mono .navbar-nav > li + li {
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  .navbar-mono .navbar-brand {
+    padding: 15px;
+    margin: 0 0 0 0;
+  }
+  .navbar-mono .navbar-nav {
+    padding: 0;
+  }
+  .navbar-mono .navbar-nav > li > a {
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-backface-visibility: hidden;
+    -moz-perspective: 1000;
+    -webkit-transition: background 0.1s ease-in-out;
+    -moz-transition: background 0.1s ease-in-out;
+    transition: background 0.1s ease-in-out;
+    border: 0 none;
+    border-radius: 0;
+  }
+  .navbar-mono .navbar-nav > li > a:hover {
+    background: #fff;
+    color: #000;
+  }
+  .navbar-mono .navbar-nav > li.active > a {
+    background: #fff;
+    color: #000;
+  }
+  .navbar-mono .navbar-nav > li + li {
+    margin-left: 0;
+  }
+}
+/*
     Non-essential sections
     Most of the classes here are used as an example in the preview theme
 */

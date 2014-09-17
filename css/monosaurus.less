@@ -138,6 +138,125 @@ section {
 }
 
 /*
+    Navigation bar
+*/
+.navbar-mono {
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    .navbar-brand {
+        padding: 10px 20px;
+        margin: 20px 0;
+
+        color: #555;
+        font-size: 20px;
+    }
+
+    .navbar-toggle {
+        border: 2px solid #333;
+        .animate(border-color);
+        padding: 8px 9px;
+
+        .icon-bar {
+            background-color: #333;
+            .animate(background-color);
+        }
+
+        &.collapsed {
+            border-color: #999;
+
+            .icon-bar {
+                background-color: #999;
+            }
+        }
+
+        &:hover {
+            border-color: #333;
+
+            .icon-bar {
+                background-color: #333;
+            }
+        }
+    }
+
+    .navbar-nav {
+        font-size: 16px;
+        padding: 20px 0;
+
+        & > li {
+            & > a {
+                color: #333;
+                outline: 0 none;
+                border: 2px solid transparent;
+                padding: 10px 20px;
+                border-radius: 6px;
+                .animate(border-color);
+
+                &:hover,
+                &:active,
+                &:focus {
+                    outline: 0 none;
+                    background: transparent;
+                }
+
+                &:hover {
+                    border-color: #999;
+                }
+            }
+
+            &.active {
+                & > a {
+                    color: #000;
+                    border-color: #555;
+
+                }
+            }
+
+            & + li {
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-mono {
+        .navbar-brand {
+            padding: 15px;
+            margin: 0 0 0 0;
+        }
+
+        .navbar-nav {
+            padding: 0;
+
+            & > li {
+                & > a {
+                    .animate(background);
+                    border: 0 none;
+                    border-radius: 0;
+
+                    &:hover {
+                        background: #fff;
+                        color: #000;
+                    }
+                }
+
+                &.active {
+                    & > a {
+                        background: #fff;
+                        color: #000;
+                    }
+                }
+
+                & + li {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+
+/*
     Non-essential sections
     Most of the classes here are used as an example in the preview theme
 */

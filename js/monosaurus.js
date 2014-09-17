@@ -13,22 +13,11 @@
  * @since      1.0.0
  */
 
- $(document).ready(function () {
+$(document).ready(function () {
     /*
-        Size up the section.full elements
-        140px is the offset of top and bottom padding of the section element
-        which is 70px each.
+        Resize the sections accordingly
     */
-    $('section.full').each(function () {
-        $(this).height( $(window).height() - 140 );
-    });
-
-    /*
-        Size up min-height for section.minfull elements
-    */
-    $('section.minfull').each(function () {
-        $(this).css('min-height', ($(window).height() - 140) + 'px' );
-    });
+    mono_UIresize();
 
     /*
         Skip to content toggle
@@ -55,4 +44,52 @@
             });
         }
     });
- });
+});
+
+/*
+    Helper Functions
+*/
+function mono_UIresize () {
+    /*
+        Size up the section.full elements
+        140px is the offset of top and bottom padding of the section element
+        which is 70px each.
+    */
+    $('section.full').each(function () {
+        $(this).height( $(window).height() - 140 );
+    });
+
+    /*
+        Size up min-height for section.minfull elements
+    */
+    $('section.minfull').each(function () {
+        $(this).css('min-height', ($(window).height() - 140) + 'px' );
+    });
+}
+
+/*
+    Awesome function made by brahn (http://stackoverflow.com/users/239712/brahn)
+    Check it out here:
+    http://stackoverflow.com/a/4541963
+*/
+var waitForFinalEvent = (function () {
+  var timers = {};
+  return function (callback, ms, uniqueId) {
+    if (!uniqueId) {
+      uniqueId = "Don't call this twice without a uniqueId";
+    }
+    if (timers[uniqueId]) {
+      clearTimeout (timers[uniqueId]);
+    }
+    timers[uniqueId] = setTimeout(callback, ms);
+  };
+})();
+
+/*
+    On window resize, resize those sections back to full height
+*/
+$(window).resize(function () {
+    waitForFinalEvent(function(){
+      mono_UIresize();
+    }, 500, "monoResizeSections");
+});
