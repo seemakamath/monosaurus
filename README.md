@@ -11,16 +11,16 @@ Requirements
 
 This template is built with these libraries and technologies:
 
-* [Bootstrap 3.2.0](http://getbootstrap.com/)
-* [Font Awesome 4.2.0](http://fontawesome.io/)
-* [LESS](http://lesscss.org/)
-* [jQuery](http://jquery.com/)
+* [Bootstrap 3.2.0](http://getbootstrap.com/) for the scaffolding and responsive utilities
+* [Font Awesome 4.2.0](http://fontawesome.io/) for most of the icons
+* [LESS](http://lesscss.org/) for development, making my CSS tidy and reusable
+* [jQuery](http://jquery.com/) (small amount) for some full-bleed magic
+* [IcoMoon](https://icomoon.io) for converting vectors to icons
 
 Usage Instructions
 ------------------
 
 The source file (HTML, JS & CSS) are documented with comments. Read through these files to see which does what, and how to use certain components
-
 
 Licence
 -------
