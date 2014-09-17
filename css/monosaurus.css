@@ -396,6 +396,17 @@ section {
 .mono-white footer {
   color: #fff;
 }
+@media (max-width: 970px) {
+  .mono-quote-container {
+    width: 100%;
+  }
+  .mono-quote-container .carousel-inner .item {
+    padding: 0px 80px;
+  }
+  .mono-quote-container .carousel-inner .item blockquote {
+    margin: 0 0;
+  }
+}
 @media (max-width: 767px) {
   .mono-quote-container {
     width: 100%;
@@ -411,17 +422,6 @@ section {
   }
   .mono-quote-container .carousel-indicators {
     display: none;
-  }
-}
-@media (max-width: 970px) {
-  .mono-quote-container {
-    width: 100%;
-  }
-  .mono-quote-container .carousel-inner .item {
-    padding: 0px 80px;
-  }
-  .mono-quote-container .carousel-inner .item blockquote {
-    margin: 0 0;
   }
 }
 /*
